@@ -225,16 +225,67 @@
 <section id="time">
 <h2>Time<a class="headerlink" href="#time" title="Permalink to this headline">¶</a></h2>
 <p>Contains some fuctions that can be used to show the epiweeks info.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="chimeric_tools.Time.todayEpiWeek">
+<span class="sig-prename descclassname"><span class="pre">chimeric_tools.Time.</span></span><span class="sig-name descname"><span class="pre">todayEpiWeek</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#chimeric_tools.Time.todayEpiWeek" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the epidemic week that corresponds to today date in YYYY-mm-dd format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the epiweek</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>INT</p>
+</dd>
+</dl>
+</dd></dl>
+
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">chimeric_tools</span> <span class="kn">import</span> <span class="n">Time</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Time</span><span class="o">.</span><span class="n">todayEpiWeek</span><span class="p">()</span>
 <span class="go">12</span>
 </pre></div>
 </div>
+<dl class="py function">
+<dt class="sig sig-object py" id="chimeric_tools.Time.fromDate2Epiweek">
+<span class="sig-prename descclassname"><span class="pre">chimeric_tools.Time.</span></span><span class="sig-name descname"><span class="pre">fromDate2Epiweek</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">String</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#chimeric_tools.Time.fromDate2Epiweek" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the epidemic week that corresponds to a date in YYYY-mm-dd format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>a string in the format YYYY-mm-dd</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the epiweek</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>INT</p>
+</dd>
+</dl>
+</dd></dl>
+
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">chimeric_tools</span> <span class="kn">import</span> <span class="n">Time</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Time</span><span class="o">.</span><span class="n">fromDate2Epiweek</span><span class="p">(</span><span class="n">fromDate2Epiweek</span><span class="p">(</span><span class="s2">&quot;2020-03-22&quot;</span><span class="p">))</span>
 <span class="go">13</span>
 </pre></div>
 </div>
+<dl class="py function">
+<dt class="sig sig-object py" id="chimeric_tools.Time.fromDates2Epiweeks">
+<span class="sig-prename descclassname"><span class="pre">chimeric_tools.Time.</span></span><span class="sig-name descname"><span class="pre">fromDates2Epiweeks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#chimeric_tools.Time.fromDates2Epiweeks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the epidemic weeks that corresponds to a list of dates in YYYY-mm-dd format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>a list of strings in the format YYYY-mm-dd</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of epiweeks</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>LIST</p>
+</dd>
+</dl>
+</dd></dl>
+
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">chimeric_tools</span> <span class="kn">import</span> <span class="n">Time</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Time</span><span class="o">.</span><span class="n">fromDates2Epiweeks</span><span class="p">([</span><span class="s2">&quot;2020-01-22&quot;</span><span class="p">,</span><span class="s2">&quot;2020-02-23&quot;</span><span class="p">,</span><span class="s2">&quot;2020-03-24&quot;</span><span class="p">])</span>
 <span class="go">[4, 9, 13]</span>
