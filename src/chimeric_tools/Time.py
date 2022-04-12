@@ -37,6 +37,7 @@ def fromDates2Epiweeks(datelist):
     :param: a list of strings in the format YYYY-mm-dd
     :return: a list of epiweeks
     :rtype: LIST
+    
     """
     Epiweeks = []
     for Date in datelist:
