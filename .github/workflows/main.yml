@@ -46,12 +46,11 @@ jobs:
 
       - name: 🔧 Build HTML
         run: |
-          cd docs
           make html
 
         # remove the .doctrees folder when building for deployment as it takes two thirds of disk space
       - name: 🔥 Clean up files
-        run: rm -r docs/_build/doctrees/
+        run: rm -r build/doctrees/
 
       - name: 🚀 Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3.6.1
